@@ -48,7 +48,7 @@ nav:
       - Sintaxis básica: 1-markdown-cas/sintaxis.md
       - Referencias: 1-markdown-cas/referencias.md
   - P3-MkDocs (val):
-      - Introducció: 2-mkdocs-val/introduccin.md
+      - Introducció: 2-mkdocs-val/introduccio.md
       - Instal·lació: 2-mkdocs-val/instalacio.md
       - Configuració: 2-mkdocs-val/configuracio.md
       - Allotjament en GitHub: 2-mkdocs-val/allotjament.md

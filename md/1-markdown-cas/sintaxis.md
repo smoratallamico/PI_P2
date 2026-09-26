@@ -372,8 +372,8 @@ Ejemplos:
 ```
 
 !!! note "Resultado"
-    ![Imagen 1 - 10cm](./../img/logoMarkdown.png){width=10cm}
+    ![Imagen 1 - 10cm](./../img/logoMarkdown.png){ width=10cm }
 
-    ![Imagen 2 - 50mm](./../img/logoMarkdown.png){width=50mm}
+    ![Imagen 2 - 50mm](./../img/logoMarkdown.png){ width=50mm }
 
     ![Imagen 3 - 50%](./../img/logoMarkdown.png){ width=50% }
