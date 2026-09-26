@@ -1,0 +1,61 @@
+# Nom del lloc
+site_name: P2-P3 - Projecte Intermodular
+
+# Carpeta amb el documents font
+docs_dir: 'md'
+
+# Carpeta on es generarà el lloc web (mkdocs build)
+site_dir: 'docs'
+
+# Adreça on s'executa el server local (mkdocs serve)
+dev_addr: localhost:4000
+
+# Tema a triar
+theme:
+  name: material
+  highlightjs: true
+  palette:
+    primary: teal      # Color de la capçalera
+    accent: indigo       # Color dels detalls (enllaços, botons...)
+  features:
+    # utilitats de copia de codi
+    - content.code.copy 
+    - content.code.select
+    - content.code.annotate
+    - navigation.top    # boto flotant de tornar a dalt 
+
+# Extenions
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - attr_list
+
+# Navegació dels documents
+nav:
+  - Inici: index.md
+  - P2-Markdown (val):
+      - Introducció: 1-markdown-val/introduccio.md
+      - Editors: 1-markdown-val/editors.md
+      - Sintaxis bàsica: 1-markdown-val/sintaxis.md
+      - Referències: 1-markdown-val/referencies.md
+  - P2-Markdown (cas):
+      - Introducción: 1-markdown-cas/introduccion.md
+      - Editores: 1-markdown-cas/editores.md
+      - Sintaxis básica: 1-markdown-cas/sintaxis.md
+      - Referencias: 1-markdown-cas/referencias.md
+  - P3-MkDocs (val):
+      - Introducció: 2-mkdocs-val/introduccin.md
+      - Instal·lació: 2-mkdocs-val/instalacio.md
+      - Configuració: 2-mkdocs-val/configuracio.md
+      - Allotjament en GitHub: 2-mkdocs-val/allotjament.md
+      - Referències: 2-mkdocs-val/referencies.md
+  - P3-MkDocs (cas):
+      - Introducción: 2-mkdocs-cas/introduccion.md
+      - Instalación: 2-mkdocs-cas/instalacion.md
+      - Configuración: 2-mkdocs-cas/configuracion.md
+      - Alojamiento en GitHub: 2-mkdocs-cas/alojamiento.md
+      - Referencias: 2-mkdocs-cas/referencias.md

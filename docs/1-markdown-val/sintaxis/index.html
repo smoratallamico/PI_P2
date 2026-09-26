@@ -1,0 +1,1877 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../editors/">
+      
+      
+        <link rel="next" href="../referencies/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sintaxis bàsica - P2-P3 - Projecte Intermodular</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sintaxis-basica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="P2-P3 - Projecte Intermodular" class="md-header__button md-logo" aria-label="P2-P3 - Projecte Intermodular" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            P2-P3 - Projecte Intermodular
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sintaxis bàsica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="P2-P3 - Projecte Intermodular" class="md-nav__button md-logo" aria-label="P2-P3 - Projecte Intermodular" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    P2-P3 - Projecte Intermodular
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inici
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2-Markdown (val)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    P2-Markdown (val)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduccio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducció
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sintaxis bàsica
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sintaxis bàsica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-paragrafs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Paràgrafs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-capcaleres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Capçaleres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Capçaleres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-atributs-a-la-capcalera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Atributs a la capçalera
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-format-de-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Format de text
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-linies-horitzontals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Línies horitzontals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-llistes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Llistes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Llistes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-llistes-no-ordenades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Llistes no ordenades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-llistes-ordenades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. Llistes ordenades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-taules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Taules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Taules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-formatat-el-contingut-duna-taula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Formatat el contingut d'una taula
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-fragments-de-codi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Fragments de codi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Cites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-enllacos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Enllaços
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Enllaços">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-enllacos-interns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1. Enllaços interns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-imatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Imatges
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Imatges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-afegint-grandaria-a-les-imatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Afegint grandària a les imatges
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referències
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2-Markdown (cas)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    P2-Markdown (cas)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-markdown-cas/introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-markdown-cas/editores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-markdown-cas/sintaxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sintaxis básica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-markdown-cas/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P3-MkDocs (val)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    P3-MkDocs (val)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-val/introduccin.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducció
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-val/instalacio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instal·lació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-val/configuracio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuració
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-val/allotjament/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Allotjament en GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-val/referencies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referències
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P3-MkDocs (cas)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    P3-MkDocs (cas)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-cas/introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-cas/instalacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-cas/configuracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-cas/alojamiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alojamiento en GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-mkdocs-cas/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-paragrafs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Paràgrafs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-capcaleres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Capçaleres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Capçaleres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-atributs-a-la-capcalera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Atributs a la capçalera
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-format-de-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Format de text
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-linies-horitzontals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Línies horitzontals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-llistes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Llistes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Llistes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-llistes-no-ordenades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Llistes no ordenades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-llistes-ordenades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. Llistes ordenades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-taules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Taules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Taules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-formatat-el-contingut-duna-taula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Formatat el contingut d'una taula
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-fragments-de-codi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Fragments de codi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Cites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-enllacos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Enllaços
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Enllaços">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-enllacos-interns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1. Enllaços interns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-imatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Imatges
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Imatges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-afegint-grandaria-a-les-imatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Afegint grandària a les imatges
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sintaxis-basica">Sintaxis bàsica</h1>
+<p>Com hem dit, Markdown es basa en fitxers de tipus text, que no contenen cap informació interna sobre el format. Aquesta informació, s'especificarà de manera explícita mitjançant etiquetes, que seran visibles en tot moment, i que facilitaran, d'una banda, la seva interpretació en l'hora d'exportar-los a un altre format, però també la seva lectura per part de les persones.</p>
+<p>En aquest apartat, veurem quins són els diferents elements que podem utilitzar en un text en format Markdown, així com les principals marques de format.</p>
+<h2 id="1-paragrafs">1. Paràgrafs</h2>
+<p>Un paràgraf, tal com ho entén Markdown, és un bloc de text definit entre dos salts de línia(tecla <code>Intro/Enter/Entrar</code>).</p>
+<p>Si utilitzem només un salt de línia, se sobreentén que és el mateix paràgraf, i en l'hora de generar el document, el veurem com a tal.</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Este és el primer paràgraf, com veieu, necessita dos salts de línia, o el que seria el mateix, una línia en blanc després del paràgraf.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>Aquest és un altre paràgraf.
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<p>Este és el primer paràgraf, com veieu, necessita dos salts de línia, o el que seria el mateix, una línia en blanc després del paràgraf.</p>
+<p>Aquest és un altre paràgraf.</p>
+</div>
+<h2 id="2-capcaleres">2. Capçaleres</h2>
+<p>Hi ha diverses maneres de marcar capçaleres, nosaltres utilitzarem l'Estil ATX, al qual, utilitzem el símbol (<code>#</code>) abans del text per a indicar el nivell de la capçalera. S'admeten fins a sis nivells de profunditat (<code>######</code>), el que vindria a ser del (<code>h1</code>) fins al (<code>h6</code>) de #HTML.</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="gh"># Encapçalat 1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="gu">## Encapçalat 2</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="gu">### Encapçalat 3</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>...
+</span></code></pre></div></td></tr></table></div>
+<blockquote>
+<p>A tenir amb compte</p>
+<p>La versió estàndard de Markdown no requereix d'una línia en blanc abans d'una capçalera, però altres versions, com per exemple la de Pandoc sí que la requereix. No obstant això, encara que l'estàndard no l'utilitza, convé afegir-la ja que facilita així la lectura i localització d'aquestes.</p>
+<p>Algunes implementacions, tampoc requereixen d'un espai entre el símbol <code>#</code> inicial i el primer caràcter del títol.</p>
+</blockquote>
+<h3 id="21-atributs-a-la-capcalera">2.1. Atributs a la capçalera</h3>
+<p>Quan es genera un document, ja sigui PDF, #HTML o un altre format a partir d'un document en Markdown, a les capçaleres els hi assigna un identificador de manera automàtica, perquè es pugui fer referència a elles des d'altres parts del document. Aquest identificador s'obté a partir del text de la capçalera, pel qual si aquesta és llarga, l'identificador també ho serà. La versió de Pandoc, ens permet afegir uns certs atributs a les capçaleres, entre les quals es troba l'identificador.</p>
+<p>Donada, per exemple, una capçalera com la següent:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="gh"># Introducció: L'art d'escriure davant un ordinador</span>
+</span></code></pre></div></td></tr></table></div>
+<p>L'identificador que es genera és: <code>id="introducció-lart-descriure-davant-un-ordinador"</code>.</p>
+<p>Aquesta capçalera, la podríem haver escrit també de la manera següent:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="gh"># Introducció: L'art d'escriure davant un ordinador { #introduccio }</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Sent l'identificador de la capçelera sols <code>#introduccio</code>, de forma que podem fer referència a l'apartat mitjançant aquest.</p>
+<h2 id="3-format-de-text">3. Format de text</h2>
+<p>Markdown ens permet fer ús del símbol de l'asterisc com a marca de format de la manera següent:</p>
+<ul>
+<li>Negreta: envolta el text amb <code>**</code>.</li>
+<li>Cursiva: envolta el text amb <code>*</code>.</li>
+<li>Negreta i cursiva: Usa tres asteriscos.</li>
+</ul>
+<p>Cal tenir en compte que no hem d'afegir cap espai entre els asteriscos del principi i la primera paraula i els asteriscos del final i l'última.</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="gs">**Text en negreta**</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="ge">*Text en cursiva*</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="ges">***Text en negreta i cursiva***</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>Si afegim algun espai entre mitjà, ** no s'interpretarà correctament **
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<p><strong>Text en negreta</strong>
+<em>Text en cursiva</em>
+<strong><em>Text en negreta i cursiva</em></strong></p>
+<p>Si afegim algun espai entre mitjà, ** no s'interpretarà correctament **</p>
+</div>
+<h2 id="4-linies-horitzontals">4. Línies horitzontals</h2>
+<p>Una línia horitzontal es defineix mitjançant tres o més símbols - o _, separats o no per espais:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">-</span><span class="w"> </span>- -
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>o 
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>_ _ _
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<hr />
+<p>o</p>
+<hr />
+</div>
+<h2 id="5-llistes">5. Llistes</h2>
+<p>Markdown permet fer ús tant de llistes ordenades com llistes no ordenades.</p>
+<h3 id="51-llistes-no-ordenades">5.1. Llistes no ordenades</h3>
+<p>Les llistes no ordenades es marquen fent ús dels símbols <code>*</code>, <code>+</code> o <code>-</code> a primers de cada element, i incloent cada ítem en una línia diferent (i no fan falta dos salts de línia).</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">*</span><span class="w"> </span>Element 1
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="k">*</span><span class="w"> </span>Element 2
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>...
+</span></code></pre></div></td></tr></table></div>
+<p>Cada element de la llista pot contenir diversos paràgrafs, i altres continguts a nivell de bloc. Quan volem incloure diversos paràgrafs en un ítem de la llista, el segon paràgraf i posterior hauran d'anar precedits per una línia en blanc, i sagnats per a alinear-se amb el contingut que no sigui l'espai després del marcador de la llista.</p>
+<p>Per exemple:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">*</span><span class="w"> </span>Primer element de la llista
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="k">*</span><span class="w"> </span>Segon element de la llista
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a>  Un altre paràgraf corresponent al segon element de la llista.
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a>  No fa falta un espai en blanc entre l'últim paràgraf i el següent element, però el podem afegir per a facilitar la lectura de la llista.
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="k">*</span><span class="w"> </span>Tercer element de la llista.
+</span></code></pre></div></td></tr></table></div>
+<p>Per a generar llistes niades dins d'unes altres, simplement hauràs d'afegir quatre espais en blanc abans del següent <code>*</code>,<code>-</code> o <code>+</code>.</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span>
+<span class="normal"><a href="#__codelineno-8-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">*</span><span class="w"> </span>Element 1
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>subelement 1.1
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">        </span><span class="k">*</span><span class="w"> </span>subelement 1.1.1
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">        </span><span class="k">*</span><span class="w"> </span>subelement 1.1.2
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>subelement 1.2
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">    </span><span class="k">*</span><span class="w"> </span>subelement 1.3
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="k">*</span><span class="w"> </span>Element 2
+</span></code></pre></div></td></tr></table></div>
+<p>En aquests casos, com que podem utilitzar diversos símbols per a indicar llistes, se sol utilitzar un element per cada nivell de la llista, amb la finalitat de facilitar la lectura del text pla:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">*</span><span class="w"> </span>Element 1
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>    + subelement 1.1
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">        </span><span class="k">-</span><span class="w"> </span>subelement 1.1.1
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">        </span><span class="k">-</span><span class="w"> </span>subelement 1.1.2
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a>    + subelement 1.2
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a>    + subelement 1.3
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="k">*</span><span class="w"> </span>Element 2
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<ul>
+<li>Element 1<ul>
+<li>subelement 1.1<ul>
+<li>subelement 1.1.1</li>
+<li>subelement 1.1.2</li>
+</ul>
+</li>
+<li>subelement 1.2</li>
+<li>subelement 1.3</li>
+</ul>
+</li>
+<li>Element 2</li>
+</ul>
+</div>
+<h3 id="52-llistes-ordenades">5.2. Llistes ordenades</h3>
+<p>El funcionament de les llistes ordenades és el mateix que les no ordenades, tret que cada element de la llista porta un número.</p>
+<p>En la versió estàndard de Markdown, els elements que indiquen l'ordre han de ser números seguits d'un punt i un espai. En l'estàndard, aquests números s'ignoren, per la qual cosa la llista:</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">1.</span> Element 1
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="k">2.</span> Element 2
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="k">3.</span> Element 3
+</span></code></pre></div></td></tr></table></div>
+Serà la mateixa que:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">4.</span> Element 1
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="k">5.</span> Element 2
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">6.</span> Element 3
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultado</p>
+<ol>
+<li>Element 1</li>
+<li>Element 2</li>
+<li>Element 3</li>
+</ol>
+</div>
+<h2 id="6-taules">6. Taules</h2>
+<p>Les taules ens serveixen per a presentar informació de manera organitzada.</p>
+<p>La versió original de Markdown de John Gruber no inclou la definició de taules en la sintaxi de Markdown. Com que inicialment es va crear com una eina per a fer la conversió a HTML, per a afegir taules s'utilitzava directament aquest llenguatge.</p>
+<p>No obstant això, les diferents variants de Markdown han anat afegint notacions i extensions al Markdown original per a suportar taules.</p>
+<p>La sintaxi per a crear taules del Markdown de Github és una de les més esteses, i fa ús de barres verticals (|) i guions (-) per a crear-les. Els guions s'utilitzen per a crear l'encapçalament de cada columna, i les barres verticals serveixen de separador de cada columna. A més, perquè la taula es representi correctament, fa falta una línia en blanc abans de la taula.</p>
+<p>Les taules, en aquest format, han de tenir necessàriament una capçalera i un cos, i seguiran la següent sintaxi:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a>| Capçalera 1 | Capçalera 2 |
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>|-------------|-------------|
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a>| Valor 1     | Valor 2     |
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a>| Valor 3     | Valor 4     |
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<table>
+<thead>
+<tr>
+<th>Capçalera 1</th>
+<th>Capçalera 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Valor 1</td>
+<td>Valor 2</td>
+</tr>
+<tr>
+<td>Valor 3</td>
+<td>Valor 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Algunes consideracions:</p>
+<ul>
+<li>Podem afegir tants camps (columnes) com vulguem.</li>
+<li>La línia que separa la capçalera del cos <code>|---|---|</code> és obligatòria, però no és necessari que tinga tants caràcters com tinguen les capçaleres, pel qual no fa falta que la taula estiga completament alineada.</li>
+<li>Les barres verticals (<code>|</code>) del principi i del final són opcionals.</li>
+</ul>
+<h3 id="61-formatat-el-contingut-duna-taula">6.1. Formatat el contingut d'una taula</h3>
+<p>Dins d'una taula podem utilitzar també unes certes marques de format, com a negretes, cursives, enllaços, imatges...</p>
+<p>A més, podem alinear el text a l'esquerra, a la dreta o en el centre de la columna, afegint la marca dos punts <code>:</code>, al costat esquerre, dret, o als dos, dels guions de l'encapçalament.</p>
+<p>Veiem-l'amb un exemple. La següent definició de taula:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a>| Text a l'esquerra | Text centrat | Text a la dreta |
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>|        :---       |     :---:    |      ---:       |
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>| xxx               | xxx          | xxx             |
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>| xxxxx             | xxxxx        | xxxxx           |
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Text a l'esquerra</th>
+<th style="text-align: center;">Text centrat</th>
+<th style="text-align: right;">Text a la dreta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">xxx</td>
+<td style="text-align: center;">xxx</td>
+<td style="text-align: right;">xxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">xxxxx</td>
+<td style="text-align: center;">xxxxx</td>
+<td style="text-align: right;">xxxxx</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>Si volem afegir dins d'una taula una barra vertical (|) com a contingut, hem de posar abans el símbol (), per a indicar que el caràcter següent no s'ha d'interpretar com a marca de format Markdown. Aquesta barra invertida es denomina caràcter de fuita, i a la combinació d'ella amb qualsevol marca que vulguem que no s'interpreti es coneix com a seqüència de fuita.</p>
+</blockquote>
+<h2 id="7-fragments-de-codi">7. Fragments de codi</h2>
+<p>Markdown té un ampli ús en la documentació tècnica de projectes informàtics, on és habitual incloure fragments del codi font dels programes. Per a ressaltar aquests tipus de fragments, Markdown utilitza una sintaxi especial, fent ús dels caràcters de l'accent obert: `.</p>
+<p>Quan es tracta de fragments de codi que han d'anar en la mateixa línia que el text, per exemple si volem indicar una etiqueta #HTML, el fem, <code>d'aquesta manera</code>, fent ús d'un únic caràcter d'accent, mentre que si el que volem és escriure un bloc de codi, utilitzaríem tres símbols d'accent obert ```. A més, darrere els primers símbols, podem especificar de quin llenguatge es tracta. Per exemple, per a indicar el codi #HTML d'una pàgina web, faríem:</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span>
+<span class="normal"><a href="#__codelineno-14-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="sb">    ```html</span><span class="w"> </span>title="HTML" linenums="1" 
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a>        <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a>            <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a>            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Títol de la pàgina web<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paràgraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6"></a>            <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7"></a>        <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="sb">    ```</span>
+</span></code></pre></div></td></tr></table></div>
+Cal remarcar que el nom del llenguatge darrere les cometes fa que en mostrar el resultat, es tinga en compte el llenguatge de programació per a ressaltar la sintaxi pròpia del llenguatge.</p>
+<h2 id="8-cites">8. Cites</h2>
+<p>En Markdown, un bloc de text en forma de cita consisteix en un o més paràgrafs o altres elements de bloc (com, per exemple, llestes o capçaleres), on cada línia es troba precedís del caràcter &gt; i opcionalment un espai.</p>
+<p>Veiem alguns exemples:</p>
+<p>Exemple:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">&gt;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="ge">&gt; Un document amb format Markdown hauria de ser publicable tal qual, com a text pla, sense que semble que s'ha marcat amb etiquetes o instruccions de format.</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="k">&gt;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="ge">&gt; John Gruber</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<blockquote>
+<p>Un document amb format Markdown hauria de ser publicable tal qual, com a text pla, sense que semble que s'ha marcat amb etiquetes o instruccions de format.</p>
+<p>John Gruber</p>
+</blockquote>
+</div>
+<h2 id="9-enllacos">9. Enllaços</h2>
+<p>Markdown ens permet generar enllaços tant a adreces d'Internet, com fer referència a fitxers locals, mitjançant la seva ruta relativa o fins i tot dins del propi document.</p>
+<p>El format general per a afegir un enllaç és el següent:</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a>[<span class="nt">Text de l'enllaç</span>](<span class="na">#URL_o_adreça_relativa</span>)
+</span></code></pre></div></td></tr></table></div>
+Per exemple, per a afegir un enllaç a un lloc web, escriurem:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a>Anar a la web de l'[IES Dr. Lluís Simarro](https://portal.edu.gva.es/ieslluissimarro/)
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<p>Anar a la web de l'<a href="https://portal.edu.gva.es/ieslluissimarro/">IES Dr. Lluís Simarro</a></p>
+</div>
+<h3 id="91-enllacos-interns">9.1. Enllaços interns</h3>
+<p>Per a afegir un enllaç a una secció del nostre document, farem ús de l'identificador que s'assigna automàticament, o bé que li hem assignat nosaltres.</p>
+<p>Per exemple, si per a l'apartat introductori afegim un identificador de la manera següent:</p>
+<p><div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="gh"># Introducció: L'art d'escriure davant un ordinador {#introduccio}</span>
+</span></code></pre></div></td></tr></table></div>
+Podem fer referència a ell de la manera següent:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a>Fes clic [<span class="nt">en el següent enllaç</span>](<span class="na">#introduccio</span>) per a tornar a la secció d'Introducció.
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultat</p>
+<p>Fes clic <a href="#introduccio">en el següent enllaç</a> per a tornar a la secció d'Introducció.</p>
+</div>
+<h2 id="10-imatges">10. Imatges</h2>
+<p>La sintaxi per a afegir una imatge és semblant a la de l'enllaç, precedida d'una exclamació !:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a>![<span class="nt">Text alternatiu o peu de la imatge</span>](<span class="na">Ubicació de la imatge</span>)
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a>Igual que els enllaços, la ubicació pot ser una adreça d'Internet o bé la ruta a un fitxer local al nostre ordinador:
+</span></code></pre></div></td></tr></table></div>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a>![<span class="nt">Logotip de Markdown a la Wikipedia</span>](<span class="na">https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/markdown-mark.svg/1920px-markdown-mark.svg.png</span>)
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a>![<span class="nt">Logotip de Markdown a en una ruta relativa</span>](<span class="na">./../img/logoMarkdown.png</span>)
+</span></code></pre></div></td></tr></table></div>
+<p>En aquest segon cas, cerca la imatge logoMarkdown.png en una carpeta imatges situada en la carpeta indicada.</p>
+<p>Cal tenir en compte que quan s'exporte el fitxer a HTML, aquestes referències continuaran existint al codi HTML.</p>
+<h3 id="101-afegint-grandaria-a-les-imatges">10.1. Afegint grandària a les imatges</h3>
+<p>Algunes versions de Markdown (com Pandoc) permeten afegir uns certs atributs a les imatges. Entre aquests destaquen especialment (<code>width</code>) i (<code>height</code>), que permeten especificar la grandària de la imatge.</p>
+<p>Si no s'indica res, la grandària s'entén que s'especifica en píxels, però podem utilitzar altres unitats com <em>px, #cm, mm, in, inch i %</em>, sense incloure espais entre el número i les unitats.</p>
+<p>Exemples:</p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a>![<span class="nt">Image 1 - 10cm</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=10cm }
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a>![<span class="nt">Image 2 - 50mm</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=50mm }
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5"></a>![<span class="nt">Image 3 - 50%</span>](<span class="na">./../img/logoMarkdown.png</span>){ width=50% }
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Resultats</p>
+<p><img alt="Image 1 - 10cm" src="../../img/logoMarkdown.png" width="10cm" /></p>
+<p><img alt="Image 2 - 50mm" src="../../img/logoMarkdown.png" width="50mm" /></p>
+<p><img alt="Image 3 - 50%" src="../../img/logoMarkdown.png" width="50%" /></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
